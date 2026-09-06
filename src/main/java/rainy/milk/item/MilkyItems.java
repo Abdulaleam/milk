@@ -10,9 +10,9 @@ import rainy.milk.Milk;
 
 public class MilkyItems {
 
-    public static final Item MILKER = registerItem("milker", new Item(new Item.Settings()));
+    public static final Item MILKER = registerItem("milker", new MilkerAbility(new Item.Settings()));
 
-    public static final Item MILK = registerItem("milk", new Item(new Item.Settings()));
+    public static final Item MILK = registerItem("milk", new MilkItem(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
