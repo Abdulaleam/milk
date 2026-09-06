@@ -6,6 +6,7 @@ import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import rainy.milk.Data.DataComponets;
 import rainy.milk.item.MilkyItems;
 
 public class Milk implements ModInitializer {
@@ -15,6 +16,8 @@ public class Milk implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		MilkyItems.RegisterMilkyItems();
+		DataComponets.registerData();
+
 
 	}
 
