@@ -1,8 +1,8 @@
-package rainy.milk;
+package rainy.soul;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class MilkClient implements ClientModInitializer {
+public class SoulClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 

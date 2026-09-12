@@ -1,9 +1,11 @@
 {
 	"required": true,
-	"package": "rainy.milk.mixin",
+	"package": "rainy.soul.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+	],
+	"client": [
+		"LivingEntityRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

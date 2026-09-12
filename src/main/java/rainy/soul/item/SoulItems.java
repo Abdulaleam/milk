@@ -1,0 +1,34 @@
+package rainy.soul.item;
+
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+import rainy.soul.Soul;
+
+public class SoulItems {
+
+    public static final Item SOUL_LANTERN = registerItem("soul_lantern", new Item(new Item.Settings()));
+
+    public static final Item MILK = registerItem("milk", new Item(new Item.Settings()));
+
+
+    private static Item registerItem(String name, Item item) {
+
+        return Registry.register(Registries.ITEM, Identifier.of(Soul.MOD_ID, name), item);
+    }
+
+
+
+
+
+    public static void SoulItems() {
+        Soul.LOGGER.info("Registering SoulItemsSoulItems for " + Soul.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(MILK);
+        });
+    }
+}

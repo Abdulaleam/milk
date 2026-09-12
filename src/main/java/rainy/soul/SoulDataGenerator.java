@@ -1,9 +1,9 @@
-package rainy.milk;
+package rainy.soul;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
-public class MilkDataGenerator implements DataGeneratorEntrypoint {
+public class SoulDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 
