@@ -12,7 +12,6 @@ public class SoulItems {
 
     public static final Item SOUL_LANTERN = registerItem("soul_lantern", new Item(new Item.Settings()));
 
-    public static final Item MILK = registerItem("milk", new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
@@ -28,7 +27,7 @@ public class SoulItems {
         Soul.LOGGER.info("Registering SoulItemsSoulItems for " + Soul.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(MILK);
+
         });
     }
 }
